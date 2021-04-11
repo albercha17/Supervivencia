@@ -51,17 +51,17 @@ static void rellenarListas() throws IOException{
 	muertos= new ArrayList<String>();
 	muertos2= new ArrayList<String>();
 	muertes= new ArrayList<String>();
-	muertes=rellenar("C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\archivos\\muertes.txt");
+	muertes=rellenar("src\\archivos\\muertes.txt");
 	resucita=new ArrayList<String>();
-	resucita=rellenar("C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\archivos\\resucita.txt");
+	resucita=rellenar("src\\archivos\\resucita.txt");
 	suicidio=new ArrayList<String>();
-	suicidio=rellenar("C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\archivos\\suicidio.txt");
+	suicidio=rellenar("src\\archivos\\suicidio.txt");
 	diaN=new ArrayList<String>();
-	diaN=rellenar("C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\archivos\\diaN.txt");
+	diaN=rellenar("src\\archivos\\diaN.txt");
 	diaNG=new ArrayList<String>();
-	diaNG=rellenar("C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\archivos\\diaNG.txt");
+	diaNG=rellenar("src\\archivos\\diaNG.txt");
 	traicion=new ArrayList<String>();
-	traicion=rellenar("C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\archivos\\traicion.txt");
+	traicion=rellenar("src\\archivos\\traicion.txt");
 	
 }
 static ArrayList<superviviente> rellenarL() throws IOException {
