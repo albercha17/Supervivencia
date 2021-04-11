@@ -38,7 +38,7 @@ public class normalModeDuo extends JFrame{
 	ImageIcon iconol;
 	private boolean r;
 	public normalModeDuo() throws IOException {
-		sumode=new supervivenciaDuo("C:\\\\Users\\\\Usuario\\\\eclipse-workspace\\\\supervivencia\\\\src\\\\archivos\\\\todos.txt");
+		sumode=new supervivenciaDuo("C:\\\\Users\\\\Usuario\\\\git\\repository\\\\supervivencia\\\\src\\\\archivos\\\\todos.txt");
 		frase="";
 		archivo="";
 		r=false;
@@ -178,30 +178,30 @@ public class normalModeDuo extends JFrame{
 							label.setFont(new Font("Consolas", Font.PLAIN, 30));
 						}
 						if(sumode.getAccion()=="resucitar") {
-							iconol = new ImageIcon("C:\\Users\\Usuario\\eclipse-workspace\\supervivencia\\src\\iconos\\resurrecion.png");
+							iconol = new ImageIcon("C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\iconos\\resurrecion.png");
 							label.setIcon(iconol);
 					    }
 						else if(sumode.getAccion()=="muerto") {
-								iconol = new ImageIcon("C:\\Users\\Usuario\\eclipse-workspace\\supervivencia\\src\\iconos\\muerte.png");
+								iconol = new ImageIcon("C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\iconos\\muerte.png");
 								label.setIcon(iconol);
 						}
 						else if(sumode.getAccion()=="escudo") {
-							iconol = new ImageIcon("C:\\Users\\Usuario\\eclipse-workspace\\supervivencia\\src\\iconos\\escudo.png");
+							iconol = new ImageIcon("C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\iconos\\escudo.png");
 							label.setIcon(iconol);
 					}
 						else if(sumode.getAccion()=="dañar") {
-							iconol = new ImageIcon("C:\\Users\\Usuario\\eclipse-workspace\\supervivencia\\src\\iconos\\dañar.png");
+							iconol = new ImageIcon("C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\iconos\\dañar.png");
 							label.setIcon(iconol);
 					}
 						else if(sumode.getAccion()=="ganar") {
-							iconol = new ImageIcon("C:\\Users\\Usuario\\eclipse-workspace\\supervivencia\\src\\iconos\\ganar.png");
+							iconol = new ImageIcon("C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\iconos\\ganar.png");
 							label.setIcon(iconol);
 					}else if(sumode.getAccion()=="dianormal") {
-						iconol = new ImageIcon("C:\\Users\\Usuario\\eclipse-workspace\\supervivencia\\src\\iconos\\diaN.png");
+						iconol = new ImageIcon("C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\iconos\\diaN.png");
 						label.setIcon(iconol);
 				}
 					else {
-						iconol = new ImageIcon("C:\\Users\\Usuario\\eclipse-workspace\\supervivencia\\src\\iconos\\diaN.png");
+						iconol = new ImageIcon("C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\iconos\\diaN.png");
 						label.setIcon(iconol);
 					}
 
@@ -245,7 +245,7 @@ public class normalModeDuo extends JFrame{
 				
 				madrid.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
-						archivo="C:\\Users\\Usuario\\eclipse-workspace\\supervivencia\\src\\archivos\\madrid.txt";
+						archivo="C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\archivos\\madrid.txt";
 						try {
 							sumode=new supervivenciaDuo(archivo);
 							madrid.setEnabled(false);
@@ -264,7 +264,7 @@ public class normalModeDuo extends JFrame{
 				});
 				pueblo.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
-						archivo="C:\\Users\\Usuario\\eclipse-workspace\\supervivencia\\src\\archivos\\pueblo.txt";
+						archivo="C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\archivos\\pueblo.txt";
 						try {
 							sumode=new supervivenciaDuo(archivo);
 							madrid.setEnabled(false);
@@ -282,7 +282,7 @@ public class normalModeDuo extends JFrame{
 				});
 				famosos.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
-						archivo="C:\\Users\\Usuario\\eclipse-workspace\\supervivencia\\src\\archivos\\famosos.txt";
+						archivo="C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\archivos\\famosos.txt";
 						try {
 							sumode=new supervivenciaDuo(archivo);
 							madrid.setEnabled(false);
@@ -301,7 +301,7 @@ public class normalModeDuo extends JFrame{
 				});
 				todos.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
-						archivo="C:\\Users\\Usuario\\eclipse-workspace\\supervivencia\\src\\archivos\\todos.txt";
+						archivo="C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\archivos\\todos.txt";
 						try {
 							sumode=new supervivenciaDuo(archivo);
 							madrid.setEnabled(false);

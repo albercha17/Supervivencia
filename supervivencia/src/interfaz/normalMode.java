@@ -123,7 +123,7 @@ public class normalMode extends JFrame{
 				bomba.setFont(new Font("Consolas", Font.PLAIN, 18));
 				bomba.setForeground(new Color(0, 0, 0));
 				bomba.setLayout(new GridLayout(5, 2, 50, 25));
-				Icon icono2 = new ImageIcon("C:\\Users\\Usuario\\eclipse-workspace\\supervivencia\\src\\iconos\\bomba.png");
+				Icon icono2 = new ImageIcon("C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\iconos\\bomba.png");
 				bomba.setIcon(icono2);
 				bomba.setToolTipText("bomba");
 				bomba.setEnabled(false);
@@ -211,35 +211,35 @@ public class normalMode extends JFrame{
 							label.setFont(new Font("Consolas", Font.PLAIN, 30));
 						}
 						if(sumode.getAccion()=="resucitar") {
-							iconol = new ImageIcon("C:\\Users\\Usuario\\eclipse-workspace\\supervivencia\\src\\iconos\\resurrecion.png");
+							iconol = new ImageIcon("C:/Users/Usuario/git/repository/supervivencia/src/iconos/resurrecion.png");
 							label.setIcon(iconol);
 					    }
 						else if(sumode.getAccion()=="muerto") {
-								iconol = new ImageIcon("C:\\Users\\Usuario\\eclipse-workspace\\supervivencia\\src\\iconos\\muerte.png");
+								iconol = new ImageIcon("C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\iconos\\muerte.png");
 								label.setIcon(iconol);
 						}
 						else if(sumode.getAccion()=="escudo") {
-							iconol = new ImageIcon("C:\\Users\\Usuario\\eclipse-workspace\\supervivencia\\src\\iconos\\escudo.png");
+							iconol = new ImageIcon("C:\\Users\\Usuario\\git\repository\\supervivencia\\src\\iconos\\escudo.png");
 							label.setIcon(iconol);
 					}
 						else if(sumode.getAccion()=="dañar") {
-							iconol = new ImageIcon("C:\\Users\\Usuario\\eclipse-workspace\\supervivencia\\src\\iconos\\dañar.png");
+							iconol = new ImageIcon("C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\iconos\\dañar.png");
 							label.setIcon(iconol);
 					}
 						else if(sumode.getAccion()=="ganar") {
-							iconol = new ImageIcon("C:\\Users\\Usuario\\eclipse-workspace\\supervivencia\\src\\iconos\\ganar.png");
+							iconol = new ImageIcon("C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\iconos\\ganar.png");
 							label.setIcon(iconol);
 					}else if(sumode.getAccion()=="dianormal") {
-						iconol = new ImageIcon("C:\\Users\\Usuario\\eclipse-workspace\\supervivencia\\src\\iconos\\diaN.png");
+						iconol = new ImageIcon("C:\\Users\\Usuario\\git\\repositoryeclipse-workspace\\supervivencia\\src\\iconos\\diaN.png");
 						label.setIcon(iconol);
 				}
 					else if(sumode.getAccion()=="alianza") {
-						iconol = new ImageIcon("C:\\Users\\Usuario\\eclipse-workspace\\supervivencia\\src\\iconos\\alianza.png");
+						iconol = new ImageIcon("C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\iconos\\alianza.png");
 						label.setIcon(iconol);
 				}
 					
 					else {
-						iconol = new ImageIcon("C:\\Users\\Usuario\\eclipse-workspace\\supervivencia\\src\\iconos\\diaN.png");
+						iconol = new ImageIcon("C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\iconos\\diaN.png");
 						label.setIcon(iconol);
 					}
 
@@ -283,7 +283,7 @@ public class normalMode extends JFrame{
 				
 				madrid.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
-						archivo="C:\\Users\\Usuario\\eclipse-workspace\\supervivencia\\src\\archivos\\madrid.txt";
+						archivo="C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\archivos\\madrid.txt";
 						try {
 							if (compi.isSelected()==true) compi2=true;
 							sumode=new supervivencia(archivo,compi2);
@@ -306,7 +306,7 @@ public class normalMode extends JFrame{
 				});
 				pueblo.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
-						archivo="C:\\Users\\Usuario\\eclipse-workspace\\supervivencia\\src\\archivos\\pueblo.txt";
+						archivo="C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\archivos\\pueblo.txt";
 						try {
 							if (compi.isSelected()==true) compi2=true;
 					        
@@ -329,7 +329,7 @@ public class normalMode extends JFrame{
 				});
 				famosos.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
-						archivo="C:\\Users\\Usuario\\eclipse-workspace\\supervivencia\\src\\archivos\\famosos.txt";
+						archivo="C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\archivos\\famosos.txt";
 						try {
 							if (compi.isSelected()==true) compi2=true;
 							sumode=new supervivencia(archivo,compi2);
@@ -352,7 +352,7 @@ public class normalMode extends JFrame{
 				});
 				todos.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
-						archivo="C:\\Users\\Usuario\\eclipse-workspace\\supervivencia\\src\\archivos\\todos.txt";
+						archivo="C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\archivos\\todos.txt";
 						try {
 							if (compi.isSelected()==true) compi2=true;
 							sumode=new supervivencia(archivo,compi2);
@@ -376,7 +376,7 @@ public class normalMode extends JFrame{
 				
 				bomba.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
-						iconol = new ImageIcon("C:\\Users\\Usuario\\eclipse-workspace\\supervivencia\\src\\iconos\\bomba.png");
+						iconol = new ImageIcon("C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\iconos\\bomba.png");
 						label.setIcon(iconol);
 							label.setText(sumode.bomba());
 							supervivientes.setText(sumode.getSupervivientes());

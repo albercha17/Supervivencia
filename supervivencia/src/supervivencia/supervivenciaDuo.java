@@ -49,15 +49,15 @@ static void rellenarListas() throws IOException{
 	supervivientes=rellenarL();
 	muertos= new ArrayList<String>();
 	muertes= new ArrayList<String>();
-	muertes=rellenar("C:\\Users\\Usuario\\eclipse-workspace\\supervivencia\\src\\archivos\\muertes.txt");
+	muertes=rellenar("C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\archivos\\muertes.txt");
 	resucita=new ArrayList<String>();
-	resucita=rellenar("C:\\Users\\Usuario\\eclipse-workspace\\supervivencia\\src\\archivos\\resucita.txt");
+	resucita=rellenar("C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\archivos\\resucita.txt");
 	suicidio=new ArrayList<String>();
-	suicidio=rellenar("C:\\Users\\Usuario\\eclipse-workspace\\supervivencia\\src\\archivos\\suicidio.txt");
+	suicidio=rellenar("C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\archivos\\suicidio.txt");
 	diaN=new ArrayList<String>();
-	diaN=rellenar("C:\\Users\\Usuario\\eclipse-workspace\\supervivencia\\src\\archivos\\diaN.txt");
+	diaN=rellenar("C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\archivos\\diaN.txt");
 	diaNG=new ArrayList<String>();
-	diaNG=rellenar("C:\\Users\\Usuario\\eclipse-workspace\\supervivencia\\src\\archivos\\diaNG.txt");
+	diaNG=rellenar("C:\\Users\\Usuario\\git\\repository\\supervivencia\\src\\archivos\\diaNG.txt");
 }
 static ArrayList<supervivienteDuo> rellenarL() throws IOException {
 	String ar=archivo;
