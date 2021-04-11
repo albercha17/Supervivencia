@@ -1,14 +1,3 @@
-Cristiano Ronaldo
-El Papa
-Felipe IV
-Rick
-Messi
-Pablo Iglesias
-Pedro Sanchez
-Sesmero
-Moteño
-Fran
-Rodri
 Manko
 Mario
 Chaves
@@ -20,3 +9,29 @@ Martin
 Manu
 Fran
 Nachete
+Pablo
+Cristiano Ronaldo
+El Papa
+Felipe IV
+Rick
+Messi
+Pablo Iglesias
+Pedro Sanchez
+Spiderman
+Batman
+Capitan America
+Iron Man
+La Viuda Negra
+Black Panther
+Hulk
+Thor
+Aquaman
+Thanos
+Vegetta
+Goku
+Loki
+Venom
+Sesmero
+Moteño
+Fran
+Rodri

@@ -95,6 +95,11 @@ public class normalMode extends JFrame{
 				famosos.setForeground(new Color(0, 0, 0));
 				famosos.setLayout(new GridLayout(5, 2, 50, 25));
 				
+				JButton heroes = new JButton("SuperHeroes");
+				famosos.setFont(new Font("Consolas", Font.PLAIN, 18));
+				famosos.setForeground(new Color(0, 0, 0));
+				famosos.setLayout(new GridLayout(5, 2, 50, 25));
+				
 				JLabel s = new JLabel(" ");
 				s.setFont(new Font("Consolas", Font.PLAIN, 18));
 				s.setLayout(new GridLayout(5, 2, 50, 25));
@@ -131,6 +136,7 @@ public class normalMode extends JFrame{
 				barraBotones.add(madrid);
 			    barraBotones.add(pueblo);
 			    barraBotones.add(famosos);
+			    barraBotones.add(heroes);
 			    barraBotones.add(todos);
 			    barraBotones.add(s);
 			    barraBotones.add(compi);
@@ -291,6 +297,7 @@ public class normalMode extends JFrame{
 							madrid.setEnabled(false);
 							pueblo.setEnabled(false);
 							todos.setEnabled(false);
+							heroes.setEnabled(false);
 							famosos.setEnabled(false);
 							jugarNormal.setEnabled(true);
 							bomba.setEnabled(true);
@@ -314,6 +321,7 @@ public class normalMode extends JFrame{
 							compi.setEnabled(false);
 							madrid.setEnabled(false);
 							pueblo.setEnabled(false);
+							heroes.setEnabled(false);
 							famosos.setEnabled(false);
 							todos.setEnabled(false);
 							jugarNormal.setEnabled(true);
@@ -350,6 +358,32 @@ public class normalMode extends JFrame{
 						
 					}
 				});
+
+				heroes.addActionListener(new ActionListener() {
+					public void actionPerformed(ActionEvent e) {
+						archivo="src\\archivos\\superheroes.txt";
+						try {
+							if (compi.isSelected()==true) compi2=true;
+							sumode=new supervivencia(archivo,compi2);
+							compi.setEnabled(false);
+							heroes.setEnabled(false);
+							madrid.setEnabled(false);
+							pueblo.setEnabled(false);
+							famosos.setEnabled(false);
+							todos.setEnabled(false);
+							heroes.setEnabled(false);
+							jugarNormal.setEnabled(true);
+							bomba.setEnabled(true);
+
+							label.setText("QUE EMPIEZE LA BATALLA!!!!");
+							supervivientes.setText(sumode.getSupervivientes());
+						} catch (IOException e1) {
+							// TODO Auto-generated catch block
+							e1.printStackTrace();
+						}
+						
+					}
+				});
 				todos.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						archivo="src\\archivos\\todos.txt";
@@ -357,6 +391,7 @@ public class normalMode extends JFrame{
 							if (compi.isSelected()==true) compi2=true;
 							sumode=new supervivencia(archivo,compi2);
 							compi.setEnabled(false);
+							heroes.setEnabled(false);
 							madrid.setEnabled(false);
 							todos.setEnabled(false);
 							pueblo.setEnabled(false);

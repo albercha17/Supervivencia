@@ -38,7 +38,7 @@ public class automode extends JFrame{
 	ImageIcon iconol;
 	private boolean r,compi2;
 	public automode() throws IOException {
-		frase="";
+		frase="tonto";
 		archivo="";
 		r=false;
 		sumode=null;
@@ -204,8 +204,7 @@ public class automode extends JFrame{
 				jugarNormal.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						while(!sumode.getAcabado()) {
-							try {
-								Thread.sleep(3000);
+							
 								frase=sumode.jugar();
 								label.setText(frase);
 								supervivientes.setText(sumode.getSupervivientes());
@@ -250,11 +249,15 @@ public class automode extends JFrame{
 									JUGARo.setVisible(true);
 								}	
 								
-							} catch (InterruptedException e1) {
-								// TODO Auto-generated catch block
-								e1.printStackTrace();
-							}
+								try {
+									Thread.sleep(30);
+								} catch (InterruptedException e1) {
+									// TODO Auto-generated catch block
+									e1.printStackTrace();
+								}
 						}
+
+						
 		}
 });
 				JUGARo.addActionListener(new ActionListener() {

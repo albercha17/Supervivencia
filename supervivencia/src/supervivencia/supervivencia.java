@@ -264,6 +264,9 @@ public String getSupervivientes() {
 	for(int i=0;i<supervivientes.size();i++) {
 		x=x+supervivientes.get(i).getNombre();
 		x=x+" | ";
+		if(i==20) {
+			x=x+"\n";
+		}
 	}
 	return x;
 }
